@@ -152,6 +152,7 @@ h3{
     color:#ee9c2a;
     font-family: 'Montserrat', sans-serif;
     position: relative;
+    width: fit-content;
 }
 button{
     text-decoration: none;
@@ -201,7 +202,7 @@ h3::first-letter{
     font-size: 23px;
 }
 blockquote{
-    background: url("./img/blockquote.png");
+    background: url("../img/blockquote.png");
     background-repeat: no-repeat;
     background-position: top right;
 }
