@@ -25,6 +25,30 @@
 }
 .timeline li{
     position: relative;
+    margin-bottom: 50px!important;
+}
+.timeline li:not(:last-of-type)::before{
+    display: block;
+    color: tomato;
+    content: "o";
+    position: absolute;
+    left: 53%;
+    z-index: 345;
+    font-size: 20px;
+    background-color: white;
+    bottom: -100%;
+}
+.alter li::before{
+    left:55%!important;
+}
+.timeline li:not(:last-of-type):after{
+    display: block;
+    height: 60px;
+    width: 1px;
+    background-color: tomato;
+    content: "";
+    position: absolute;
+    left: 50%;
 }
 .timeline li p:first-of-type{
     background-color: #fff9f1;
@@ -51,4 +75,41 @@
     z-index: 9999;
     background: aliceblue;
     opacity: 0.7;
+}
+@media (max-width:1700px){
+    .timeline li::before{
+        left: 52.5%;
+    }
+    .alter li::before{
+        left:54%!important
+    }
+}
+@media (max-width:1200px){
+    .alter li::before{
+        left:55%!important
+    }
+}
+@media (max-width:1000px){
+    .timeline li::before{
+        left: 54%!important;
+    }
+    .alter li::before{
+        left:57%!important
+    }
+}
+@media (max-width:780px){
+    .timeline li::before{
+        left: 52%!important;
+    }
+    .alter li::before{
+        left:52%!important
+    }
+}
+@media (max-width:500px){
+    .timeline li::before{
+        left: 54%!important;
+    }
+    .alter li::before{
+        left:54%!important
+    }
 }
