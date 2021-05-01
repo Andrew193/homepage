@@ -105,7 +105,7 @@ h3{
     color:#ee9c2a
 }
 blockquote{
-    background: url("/img/blockquote-1.png");
+    background: url("./img/blockquote-1.png");
     background-repeat: no-repeat;
     background-position: top right;
 }
