@@ -1,0 +1,18 @@
+.contacts img{
+    width: 20px;
+    padding-right: 5px;
+}
+.contacts a{
+    display: flex;
+    align-items: center;
+}
+.contacts li:hover a{
+    font-size: 20px;
+}
+.job{
+    display: flex;
+    align-items: center;
+}
+.job img:first-of-type{
+    width: 30px;
+}
