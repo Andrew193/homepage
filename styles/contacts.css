@@ -1,0 +1,142 @@
+.contacts img {
+    width: 20px;
+    padding-right: 5px;
+}
+
+.contacts a {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contacts li {
+    width: fit-content;
+}
+
+.contacts li:hover a {
+    font-size: 20px;
+}
+
+.job {
+    display: flex;
+    align-items: center;
+}
+
+.job img:first-of-type {
+    width: 30px;
+}
+
+.fat {
+    width: 100%!important;
+}
+
+.timeline li {
+    position: relative;
+    margin-bottom: 50px!important;
+}
+
+.timeline li:not(:last-of-type)::before {
+    display: block;
+    color: tomato;
+    content: "o";
+    position: absolute;
+    left: 53%;
+    z-index: 345;
+    font-size: 20px;
+    background-color: white;
+    bottom: -100%;
+}
+
+.alter li::before {
+    left: 55%!important;
+}
+
+.timeline li:not(:last-of-type):after {
+    display: block;
+    height: 60px;
+    width: 1px;
+    background-color: tomato;
+    content: "";
+    position: absolute;
+    left: 50%;
+}
+
+.timeline li p:first-of-type {
+    background-color: #fff9f1;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all ease 0.7s;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.timeline li p:first-of-type:hover {
+    border: 1px solid #f8e7d0;
+}
+
+.timeline li p:last-of-type {
+    display: table-column;
+    transition: all ease 0.7s;
+    transform: scaleY(0);
+}
+
+.Open {
+    display: block !important;
+    transform: scaleY(1) !important;
+}
+
+.Tip {
+    position: absolute;
+    z-index: 9999;
+    background: aliceblue;
+    opacity: 0.7;
+}
+
+.Avatar {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 3px 10px;
+}
+
+@media (max-width:1700px) {
+    .timeline li::before {
+        left: 52.5%;
+    }
+    .alter li::before {
+        left: 54%!important
+    }
+}
+
+@media (max-width:1200px) {
+    .alter li::before {
+        left: 55%!important
+    }
+}
+
+@media (max-width:1000px) {
+    .timeline li::before {
+        left: 54%!important;
+    }
+    .alter li::before {
+        left: 57%!important
+    }
+}
+
+@media (max-width:780px) {
+    .timeline li::before {
+        left: 52%!important;
+    }
+    .alter li::before {
+        left: 52%!important
+    }
+}
+
+@media (max-width:500px) {
+    .timeline li::before {
+        left: 54%!important;
+    }
+    .alter li::before {
+        left: 54%!important
+    }
+}
