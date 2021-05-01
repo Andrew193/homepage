@@ -119,7 +119,7 @@ h3{
     font-family: 'Montserrat', sans-serif;
 }
 blockquote{
-    background: url("../img/blockquote-1.png");
+    background: url("./img/blockquote-1.png");
     background-repeat: no-repeat;
     background-position: top right;
 }
