@@ -23,3 +23,23 @@
 .fat{
     width: 100%!important;
 }
+.timeline li p:first-of-type{
+    background-color: #fff9f1;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all ease 0.7s;
+    border-radius: 2px;
+    padding: 5px;
+}
+.timeline li p:first-of-type:hover{
+    border: 1px solid #f8e7d0;
+}
+.timeline li p:last-of-type{
+    display: table-column;
+    transition: all ease 0.7s;
+    transform: scaleY(0);
+}
+.Open{
+    display: block !important;
+    transform: scaleY(1) !important;
+}
