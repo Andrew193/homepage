@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
   <link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
   <link rel="stylesheet" href="./styles/contacts.css">
@@ -13,6 +14,7 @@
 </head>
 
 <body>
+  <div id="google_translate_element"></div>
   <main >
     <article>
       <div class="page">
@@ -20,7 +22,7 @@
           <div class="row">
             <div class="five wide center aligned column">
               <!-- Avatar -->
-              <img class="Avatar" alt="Trump Donald" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/250px-Donald_Trump_official_portrait.jpg">
+              <a target="_blank" href="https://en.wikipedia.org/wiki/Donald_Trump"><img data-tooltip="More about me" class="Avatar" alt="Trump Donald" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/250px-Donald_Trump_official_portrait.jpg"></a>
             </div>
             <div class="eleven wide column">
               <div class="stackable grid">
@@ -129,6 +131,7 @@
                   <p data-tooltip="Remove mouse to hide">Began my career at my father's real estate development company, Elizabeth Trump & Son</p>
                 </li>
               </ul>
+              <div class="fat divider"></div>
              <!--Life-->
              <h3 data-tooltip="Click to hide/show">Personal Life</h3>
              <ul class="timeline">
@@ -179,23 +182,26 @@
                 <section>
                 <h3>Languages</h3>
                 <p class="tags small">
-                  <a href="#" hreflang="ru" rel="alternate" class="language" lang="ru"> 
+                  <a href="#" hreflang="ru" rel="alternate" class="language" lang="ru" onclick="doGTranslate('en|ru');"> 
                   <img src="./img/russia_flags_flag_17058.png" alt="russia_flag">
                   <span data-tooltip="Я знаю Русский">РУССКИЙ</span></a> 
-                  <a href="#" hreflang="en" rel="alternate" class="language" lang="en">
+                  <a href="#" hreflang="en" rel="alternate" class="language" lang="en" onclick="doGTranslate('ru|en');">
                   <img src="./img/united_states_flags_flag_17080.png" alt="united_states_flag">
                   <span data-tooltip="I know English">ENGLISH</span></a></p>
               </section>
               <!-- Skills -->
+              <div class="fat divider"></div>
               <section>
                 <h3>Skills</h3>
                 <p class="tags small">NEGOTIATING COUNTING REMODELING WRITING ACING SINGING REPORTING INCORPORATING SELLING ADVERTISING HOSTING COMPETING TWITTING PARENTING GAMBLING DATING SUING ORGANIZING FUNDING DEBATING ADVISING PRESBYTERIANING</p>
               </section>
+              <div class="fat divider"></div>
               <!-- Character -->
               <section>
                 <h3>Character</h3>
                 <p class="tags small">ADJUSTED CALM AMBITIOUS COMPETITIVE SOCIABLE DIRECT HOSTILE CARELESS IGNORANT INQUISITIVE BOLD CONFIDENT MISCHIEVOUS CHARMING INTERESTING DARING COLORFUL LAZY SELF-PROMOTING</p>
               </section>
+              <div class="fat divider"></div>
               <!-- Likes -->
               <section>
                 <h3>Likes&#x1f603;</h3>
@@ -203,6 +209,7 @@
                   BILLIONS FILET-O-FISH BIG MAC CHINA QUARTER POUNDER DIET COKE TARIFFS BIBLE ARTOF DEAL PATRIOTS BEAUTIFUL MODELS GOLD REAL ESTATE WAR PROTESTERS CONSTRUCTION RUSSIANS BANKS SPORTS WOMEN MEXICO RED HAT KOREANS GOLF EVERYBODY
                 </p>
               </section>
+              <div class="fat divider"></div>
               <!-- Dislikes -->
               <section>
                 <h3>Dislikes&#x1f61e;</h3>
@@ -210,6 +217,7 @@
                   DOGS MEDIA CNN GERMANS MEXICANS IMMIGRANTS SHITHOLE COUNTRIES UNATTRACTIVE WOMEN BLACKS SUSHI HOT-DOGS ALCOHOL FRUIT CHRISTMAS PARTIES LIBERALS
                 </p>
               </section>
+              <div class="fat divider"></div>
               <!-- Wants -->
               <section>
                 <h3>Wants&#x1f97a;</h3>
@@ -217,6 +225,7 @@
                   BE HEALTHY GROW A TREE BUILD TRUMP AIRPORT HAVE A TASTE DO A HARLEM SHAKE IN CONGRESS TO GOLF MORE OFTEN WIN ALL THE COURT SUITS
                 </p>
               </section>
+              <div class="fat divider"></div>
               <!-- Education -->
               <section>
                 <h3 data-tooltip="Click to hide/show">Education</h3>
@@ -243,6 +252,7 @@
                   </li>
                 </ul>
               </section>
+              <div class="fat divider"></div>
               <!-- Articles -->
               <section>
                 <h3 data-tooltip="Click to hide/show">Articles</h3>
@@ -283,4 +293,5 @@
   </main>
 </body>
 <script src="./scripts/script.js"></script>
+<script src="./scripts/translate.js"></script>
 </html>
