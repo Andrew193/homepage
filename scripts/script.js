@@ -13,23 +13,26 @@ window.onload = () => {
                 value.children[0].addEventListener("mouseout", (event) => {
                     div.remove()
                 })
-                
+
             })
             value.children[1].addEventListener("mouseout", (event) => { event.target.classList.remove("Open") });
         })
     })
-    document.body.querySelectorAll("h3").forEach((value)=>{
-        value.onclick=(event)=>event.target.nextElementSibling.classList.toggle("Hide")
+    document.body.querySelectorAll("h3").forEach((value) => {
+        value.onclick = (event) => event.target.nextElementSibling.classList.toggle("Hide")
     })
-} 
-function toTop(){
-    const interval=setInterval(()=>{
-        window.scrollY>10?window.scrollBy(0,-10):clearInterval(interval)
-    },20)
 }
-function toBottom(){
-    const interval=setInterval(()=>{
-        window.scrollY<document.body.scrollHeight-window.innerHeight?window.scrollBy(0,10):clearInterval(interval)
-    },20)
+function toTop() {
+    const interval = setInterval(() => {
+        window.scrollY > 10 ? window.scrollBy(0, -10) : clearInterval(interval)
+    }, 20)
+}
+function toBottom() {
+    const interval = setInterval(() => {
+        window.scrollY < document.body.scrollHeight - window.innerHeight ? window.scrollBy(0, 10) : clearInterval(interval)
+    }, 20)
+}
+function saveAsPDF(params) {
+   
 }
 

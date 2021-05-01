@@ -9,11 +9,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
   <link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
   <link rel="stylesheet" href="./styles/contacts.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
   <title>Résumé</title>
 </head>
 
 <body>
-  <main>
+  <main >
     <article>
       <div class="page">
         <div class="stackable grid">
@@ -276,6 +278,7 @@
             </div>
           </div>
         </div>
+        <button onclick="saveAsPDF()">press</button>
         <img src="./img/arrow_top_15607.png" class="control" onclick="toTop()">
       </div>
     </article>
