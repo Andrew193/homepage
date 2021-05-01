@@ -152,6 +152,7 @@ h3{
     color:#ee9c2a;
     font-family: 'Montserrat', sans-serif;
     position: relative;
+    width: fit-content;
 }
 button{
     text-decoration: none;
