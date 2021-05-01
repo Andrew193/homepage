@@ -201,7 +201,7 @@ h3::first-letter{
     font-size: 23px;
 }
 blockquote{
-    background: url("../img/blockquote.png");
+    background: url("./img/blockquote.png");
     background-repeat: no-repeat;
     background-position: top right;
 }
