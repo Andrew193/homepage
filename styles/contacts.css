@@ -1,5 +1,12 @@
+.page{
+    padding: 0;
+}
+
 main{
     margin-bottom: 0px!important;
+    background: url("../img/backTop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .row:first-of-type {
     font-family: "Trirong", serif;
@@ -119,7 +126,7 @@ h3{
     font-family: 'Montserrat', sans-serif;
 }
 blockquote{
-    background: url("../img/blockquote-1.png");
+    background: url("../img/blockquote.png");
     background-repeat: no-repeat;
     background-position: top right;
 }
