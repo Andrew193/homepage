@@ -5,8 +5,8 @@ window.onload = () => {
                 document.body?.querySelector(".Tip")?.remove()
                 event.currentTarget?.nextSibling?.nextSibling.classList.add("Open")
             })
-            console.log( value.children[0]);
             value.children[0].addEventListener("mouseover", (event) => {
+                if(!event.currentTarget.parentNode.children[1].classList.contains("Open")){
                 const div = document.createElement("div")
                 div.innerText = event.currentTarget?.nextSibling?.nextSibling.innerHTML
                 div.classList.add("Tip")
@@ -14,7 +14,7 @@ window.onload = () => {
                 value.children[0].addEventListener("mouseout", (event) => {
                     div.remove()
                 })
-
+            }
             })
             value.children[1].addEventListener("mouseout", (event) => { event.currentTarget.classList.remove("Open") });
         })
@@ -41,28 +41,19 @@ let tooltipElem;
 
 document.onmouseover = function(event) {
   let target = event.target;
-
- 
   let tooltipHtml = target.dataset.tooltip;
   if (!tooltipHtml) return;
-
-
   tooltipElem = document.createElement('div');
   tooltipElem.className = 'tooltip';
   tooltipElem.innerHTML = tooltipHtml;
   document.body.append(tooltipElem);
-
-  
   let coords = target.getBoundingClientRect();
-
   let left = coords.left + (target.offsetWidth - tooltipElem.offsetWidth) / 2;
   if (left < 0) left = 0; 
-
   let top = coords.top - tooltipElem.offsetHeight - 5;
   if (top < 0) { 
     top = coords.top + target.offsetHeight + 5;
   }
-
   tooltipElem.style.left = left + 'px';
   tooltipElem.style.top = top + 'px';
 };
