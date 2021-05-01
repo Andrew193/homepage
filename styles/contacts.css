@@ -1,8 +1,19 @@
+main{
+    margin-bottom: 0px!important;
+}
+.row:first-of-type {
+    font-family: "Trirong", serif;
+  }
 .contacts img {
     width: 20px;
     padding-right: 5px;
 }
-
+.control{
+    cursor: pointer;
+}
+.control:hover{
+    transform: scale(1.1);
+}
 .contacts a {
     display: flex;
     align-items: center;
@@ -14,7 +25,7 @@
 }
 
 .contacts li:hover a {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .job {
@@ -34,7 +45,9 @@
     position: relative;
     margin-bottom: 50px!important;
 }
-
+.Hide{
+    display: none;
+}
 .timeline li:not(:last-of-type)::before {
     display: block;
     color: tomato;
@@ -102,10 +115,11 @@
     border-radius: 3px 10px;
 }
 h3{
-    color:#ee9c2a
+    color:#ee9c2a;
+    font-family: 'Montserrat', sans-serif;
 }
 blockquote{
-    background: url("/img/blockquote-1.png");
+    background: url("../img/blockquote-1.png");
     background-repeat: no-repeat;
     background-position: top right;
 }
