@@ -5,6 +5,10 @@
 .contacts a{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+}
+.contacts li{
+    width: fit-content;
 }
 .contacts li:hover a{
     font-size: 20px;
@@ -15,4 +19,7 @@
 }
 .job img:first-of-type{
     width: 30px;
+}
+.fat{
+    width: 100%!important;
 }
