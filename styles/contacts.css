@@ -128,8 +128,9 @@ section p{
 .timeline li p:first-of-type:hover {
     border: 1px solid #ee9c2a;
     background-position: right bottom;
-    box-shadow: none;
     border-radius: 2px 5px;
+    transform: translateY(-7px);
+    box-shadow: 0 15px 20px #db9680;
 }
 
 .timeline li p:last-of-type {
@@ -204,14 +205,18 @@ button:hover:before {
     left: 150px;
     transition: .5s ease-in-out;
 }
-h3::after{
-    width: 100%;
-    height: 2px;
-    content: "";
-    background-color: #e6c32e;
+.Point{
+    display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    background-color: #5cff5c;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #2a6900;
+    right: -2px;
+    text-align: center;
+    top: 0px;
 }
 h3::first-letter{
     font-size: 23px;
