@@ -1,4 +1,16 @@
 # Homepage
+
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://andrew193.github.io/homepage/)
+
+My very own personal website. Basically this is just a résumé. Made as the first task for the academy
+
+### Technologies that were used to create
+- HTML
+- CSS
+- JS
+
 My very own personal website. Basically this is just a résumé. Made as the first task for the academy
 
 Link to site: https://andrew193.github.io/homepage/
@@ -16,6 +28,8 @@ It will create a folder with our repository name homepage. Enter to the folder w
 Now you can work with the code. To launch the project, you can use the VS Code Live Server extension. Or any similar tool.
 
 ## License
+
+MIT
 
 Copyright 2021 Andrew Sadovinskiy
 
