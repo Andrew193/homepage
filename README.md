@@ -11,6 +11,10 @@ My very own personal website. Basically this is just a résumé. Made as the fir
 - CSS
 - JS
 
+My very own personal website. Basically this is just a résumé. Made as the first task for the academy
+
+Link to site: https://andrew193.github.io/homepage/
+
 ## Installation
 
 Open git bash and navigate to the directory where you'd like to clone this project and run command below:
@@ -22,7 +26,6 @@ It will create a folder with our repository name homepage. Enter to the folder w
 `cd homepage`
 
 Now you can work with the code. To launch the project, you can use the VS Code Live Server extension. Or any similar tool.
-
 
 ## License
 
