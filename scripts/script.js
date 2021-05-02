@@ -21,8 +21,8 @@ window.onload = () => {
     })
     document.body.querySelectorAll("h3").forEach((value) => {
         value.onclick = (event) =>{
-            event.target.children[0].classList.toggle("Open") 
-            event.target.nextElementSibling.classList.toggle("Hide")}
+            event.target?.children[0]?.classList.toggle("Open") 
+            event.target.nextElementSibling?.classList.toggle("Hide")}
     })
 }
 function toTop() {

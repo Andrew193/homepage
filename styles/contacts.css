@@ -168,6 +168,12 @@ h3{
     position: relative;
     width: fit-content;
 }
+h3[data-tooltip="Click to hide/show"]{
+    cursor: pointer;
+}
+h3[data-tooltip="Click to hide/show"]:hover{
+    text-shadow: 0 0px 20px #fa8a65;
+}
 button{
     text-decoration: none;
     display: inline-block;
