@@ -2,8 +2,12 @@
     padding: 0;
     background-color: rgb(240, 218, 214);
 }
+article{
+    margin: 2%;
+    width: auto;
+}
 body{
-    top: 0px!important;
+    top: 0;
 }
 .tooltip {
     position: fixed;
@@ -18,7 +22,7 @@ body{
     z-index: 9;
   }
 main{
-    margin-bottom: 0px!important;
+    margin-bottom: 0!important;
     background: url("../img/backTop.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -107,7 +111,7 @@ main{
     background-position: left bottom;
     display: flex;
     align-items: center;
-    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
 }
 .skiptranslate{
     display: none;
@@ -128,8 +132,9 @@ section p{
 .timeline li p:first-of-type:hover {
     border: 1px solid #ee9c2a;
     background-position: right bottom;
-    box-shadow: none;
     border-radius: 2px 5px;
+    transform: translateY(-7px);
+    box-shadow: 0 15px 20px #db9680;
 }
 
 .timeline li p:last-of-type {
@@ -143,7 +148,7 @@ section p{
 .Open {
     display: block !important;
     transform: scaleY(1) !important;
-    border-radius: 0px 0px 7px 7px;
+    border-radius: 0 0 7px 7px;
     padding: 3px;
 }
 
@@ -152,13 +157,13 @@ section p{
     z-index: 9999;
     background: aliceblue;
     opacity: 0.7;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 .Avatar {
-    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -webkit-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
     border-radius: 3px 10px;
 }
 h3{
@@ -166,6 +171,12 @@ h3{
     font-family: 'Montserrat', sans-serif;
     position: relative;
     width: fit-content;
+}
+h3[data-tooltip="Click to hide/show"]{
+    cursor: pointer;
+}
+h3[data-tooltip="Click to hide/show"]:hover{
+    text-shadow: 0 0 20px #fa8a65;
 }
 button{
     text-decoration: none;
@@ -182,7 +193,7 @@ button{
     background: transparent;
     cursor: pointer;
     right: 5%;
-    bottom: 0%;
+    bottom: 0;
 }
 button:before {
     content: "";
@@ -204,14 +215,18 @@ button:hover:before {
     left: 150px;
     transition: .5s ease-in-out;
 }
-h3::after{
-    width: 100%;
-    height: 2px;
-    content: "";
-    background-color: #e6c32e;
+.Point{
+    display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    background-color: #5cff5c;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #2a6900;
+    right: -2px;
+    text-align: center;
+    top: 0;
 }
 h3::first-letter{
     font-size: 23px;

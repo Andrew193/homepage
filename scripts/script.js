@@ -20,7 +20,9 @@ window.onload = () => {
         })
     })
     document.body.querySelectorAll("h3").forEach((value) => {
-        value.onclick = (event) => event.target.nextElementSibling.classList.toggle("Hide")
+        value.onclick = (event) =>{
+            event.target?.children[0]?.classList.toggle("Open") 
+            event.target.nextElementSibling?.classList.toggle("Hide")}
     })
 }
 function toTop() {
